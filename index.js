@@ -68,7 +68,7 @@ function updateTimer(){
     else{
         clearInterval(timerInterval)
         foto.src = 'img/pikachu_dood.jpg' //bron foto:https://aminoapps.com/c/pokemon/page/item/pikachu-fainted/Mjh0_IgQXaK018z2aRLdkvZ1noNVdP
-        alert('Pikachu is dood')
+        alert('Pikachu is dood :(')
     }
 }
 
