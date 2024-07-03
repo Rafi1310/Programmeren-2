@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-color: lightgreen;
 }
 
 img{
@@ -9,11 +10,13 @@ img{
 
 button{
     margin: 2em;
-    padding: 2em;
+    padding: 1em;
     border-radius: 20px;
     background-color:rgb(205, 154, 0);
     border-color: brown;
     box-shadow: 5px 5px;
+    font-family: 'Papyrus';
+    font-size: 1.5em;
 }
 
 #veranderKnop{
