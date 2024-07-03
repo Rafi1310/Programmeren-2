@@ -6,7 +6,9 @@ const eetAudio = new Audio('audio/eating.mp3')
 const drinkAudio = new Audio('audio/drinking.mp3')
 const pikaAudio = new Audio('audio/pika.mp3')
 const timer = document.querySelector('#timer')
+const resetKnop = document.querySelector('#resetKnop')
 let timeLeft = 30
+let timerInterval
 
 function changeFoto(){
     if (foto.src.endsWith("img/pikachu_eet.jpg")) {
@@ -45,4 +47,19 @@ function updateTimer(){
         alert('Pikachu is dood')
     }
 }
-const timerInterval = setInterval(updateTimer, 1000)
+
+function startTimer(){
+    clearInterval(timerInterval)
+    timerInterval = setInterval(updateTimer, 1000)
+}
+
+function resetTimer(){
+    clearInterval(timerInterval)
+    timeLeft = 30
+    timer.textContent = timeLeft
+    startTimer()
+}
+
+resetKnop.addEventListener('click', resetTimer)
+
+startTimer()
