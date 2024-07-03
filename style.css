@@ -29,5 +29,5 @@ button:hover{
 
 div{
     font-size: 4em;
-    font-family: 'Impact';
+    font-family: 'Impact', 'Tahoma', Arial, Helvetica, sans-serif;
 }
