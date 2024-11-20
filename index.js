@@ -86,6 +86,12 @@ function resetTimer(){
     startTimer()
 }
 
-resetKnop.addEventListener('click', resetTimer)
+function reset(){
+    if(timeLeft <= 0){
+        resetTimer()
+    }
+}
+
+resetKnop.addEventListener('click', reset)
 
 startTimer()
